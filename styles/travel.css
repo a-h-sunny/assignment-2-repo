@@ -295,6 +295,27 @@ align-items: center;
 height: 1px;
 margin-top: 20px;
 }
+.p-name img{
+    width: 60px;
+}
+.p-name{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 2px solid orangered;
+    border-radius: 16px;
+    background: peachpuff;
+    padding: 20px;
+}
+.partners{
+    display: flex;
+    gap: 20px;
+}
+.p-heading{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 80px;
+}
 /* responsive design for small devices */
 @media screen and (max-width:567px) {
 
@@ -341,7 +362,9 @@ margin-top: 20px;
         .footer  .tour-des{
            width: auto;
         }
-        
+        .partners{
+            flex-direction: column;
+        }
     
         
 }

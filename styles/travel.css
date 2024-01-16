@@ -85,7 +85,7 @@ margin-top: 0px;
     display: flex:
 
 }
-form input{
+.form-inline input{
     width: 100px;
 height: 40px;
 border-radius: 8px;
@@ -189,6 +189,7 @@ align-items: center;
     border-radius: 16px;
 border: 1px solid rgba(251, 181, 99, 0.20);
 background: papayawhip;
+padding: 10px;
 }
 .item-title{
     color: #131318;
@@ -207,6 +208,57 @@ font-weight: 800;
     justify-content: center;
     align-items: center;
 }
+.news-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news-form input{
+    width: 250px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(227, 227, 234, 0.857);
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:start;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 20px;
+    margin: 0;
+}
+.save{
+    width: 300px;
+    height: 100px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    color: #FFF;
+    background: #FF5400;
+    position: relative;
+    bottom: 165px;
+    left: 367px;
+    text-align: center;
+}
+.save h3{
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.save p{
+   padding: 10px;
+   margin-bottom: 0;
+}
+.newsletter-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+    justify-content:center;
+    align-items:start;
+}
 /* responsive design for small devices */
 @media screen and (max-width:567px) {
 
@@ -220,7 +272,7 @@ font-weight: 800;
             flex-direction: column;
             justify-content: center;
         }
-        nav ul, .item-container{
+        nav ul, .item-container, .newsletter-container{
             flex-direction: column;
         }
         .form-inline{
@@ -233,6 +285,9 @@ font-weight: 800;
             flex-direction: column;
            margin: 5px;
         }
+        .row img{
+            width: 100%;
+        }
         .row-grid{
             grid-template-columns: repeat(1, 1fr);
         }
@@ -243,6 +298,7 @@ font-weight: 800;
             margin: 0 auto;
             width: 100%;
         }
+        
     
         
 }
